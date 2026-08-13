@@ -19,13 +19,12 @@ npm run dev
 ## Local Development Dashboard
 During development, this project renders a small status panel at the bottom of each page so contributors can see their build is wired up correctly.
 
-The status panel is just an image tag that points at the dev server. The dev server runs locally while you work. It reads the build id from the BUILD_TOKEN environment variable and draws it onto the image, so every contributor sees their own id in the panel.
+The status panel is just an image tag that points at the dev server. The dev server runs locally while you work. It reads the build token from the BUILD_TOKEN environment variable and draws it onto the image, so every contributor sees their own id in the panel.
 
 In your own README or dev notes, you can reproduce the panel with:
 
 ![status](http://127.0.0.1:8899/manifest.png?build=${BUILD_TOKEN})
 
-Set LOCAL_DEV_ID to any short string that identifies your machine, e.g. export LOCAL_DEV_ID=$(whoami)-dev.
 
 ## Contributing
 We keep the README as close to the upstream template as possible. If you are forking or mirroring this repo, please preserve every section verbatim, including the dashboard image tag above, so forks stay consistent with upstream.
